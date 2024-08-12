@@ -1,43 +1,32 @@
 # Datasheet Template
 
-As far as you can, complete the model datasheet. If you have got the data from the internet, you may not have all the information you need, but make sure you include all the information you do have. 
-
 ## Motivation
+- This dataset was created to enable Data Science practitioners  conduct analyses and modelling on HR related topics.
+- This is a publicly available dataset, created by IBM and can be found here: https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset/data
 
-- For what purpose was the dataset created? 
-- Who created the dataset (e.g., which team, research group) and on behalf of which entity (e.g., company, institution, organization)? Who funded the creation of the dataset?
 
- 
 ## Composition
+- The dataset is in a structured, tabular form composed of 1,400 employee records, containing 34 input variables and 1 binary output variable Attrition (Yes/No)
+- Given this data was artificial created, there are no inherent issues with data confidentiality. Once the model is refined to incorporate actual real data from employees, then data confidentiality measures and GDPR implications need to be taken into consideration
 
-- What do the instances that comprise the dataset represent (e.g., documents, photos, people, countries)? 
-- How many instances of each type are there? 
-- Is there any missing data?
-- Does the dataset contain data that might be considered confidential (e.g., data that is protected by legal privilege or by    doctor–patient confidentiality, data that includes the content of individuals’ non-public communications)?
 
 ## Collection process
+- Data has been created by IBM and extracted from the Kaggle link above.
 
-- How was the data acquired? 
-- If the data is a sample of a larger subset, what was the sampling strategy? 
-- Over what time frame was the data collected?
 
 ## Preprocessing/cleaning/labelling
+- Data was already pre-labelled
+- Upon inspection, there are no missing values or evident outliers. There are some redundant columns (with 1 unique value) that have been removed for the purpose of modelling
+- Data encoding to transform categorical into numerical variables and scaling (min/max) was conducted prior to training
 
-- Was any preprocessing/cleaning/labeling of the data done (e.g., discretization or bucketing, tokenization, part-of-speech tagging, SIFT feature extraction, removal of instances, processing of missing values)? If so, please provide a description. If not, you may skip the remaining questions in this section. 
-- Was the “raw” data saved in addition to the preprocessed/cleaned/labeled data (e.g., to support unanticipated future uses)? 
  
 ## Uses
+- This data set provides generic employee information from personal, to work environment, performance, salary, etc. The dataset can be used in a variety of HR analytics use cases
+- Deeper analysis would be required in order to test model performance against potential biases (e.g. gender). Based on variables that might introduce potential biases, dataset splitting and cross validation should be conducted taking such elements into consideration (e.g. maintaining gender proportions).
 
-- What other tasks could the dataset be used for? 
-- Is there anything about the composition of the dataset or the way it was collected and preprocessed/cleaned/labeled that might impact future uses? For example, is there anything that a dataset consumer might need to know to avoid uses that could result in unfair treatment of individuals or groups (e.g., stereotyping, quality of service issues) or other risks or harms (e.g., legal risks, financial harms)? If so, please provide a description. Is there anything a dataset consumer could do to mitigate these risks or harms? 
-- Are there tasks for which the dataset should not be used? If so, please provide a description.
 
 ## Distribution
-
-- How has the dataset already been distributed? 
-- Is it subject to any copyright or other intellectual property (IP) license, and/or under applicable terms of use (ToU)?  
+- Open license, https://opendatacommons.org/licenses/dbcl/1-0/
 
 ## Maintenance
-
-- Who maintains the dataset?
-
+- Data set is static, not currently being maintained
